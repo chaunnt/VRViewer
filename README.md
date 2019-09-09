@@ -1,2 +1,2 @@
-# SampleQtProject
-SampleQtProject
+# QtWithQMLPluginProjects
+QtWithQMLPluginProjects

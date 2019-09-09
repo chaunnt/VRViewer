@@ -1,0 +1,4 @@
+module ImageFilterPlugins
+plugin ImageFilterPlugins
+classname ImageFilterPlugins
+typeinfo plugins.qmltypes

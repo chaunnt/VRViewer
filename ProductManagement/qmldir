@@ -1,0 +1,5 @@
+module ProductManagement
+plugin ProductManagement
+classname ProductManagementPlugins
+typeinfo plugins.qmltypes
+depends QtQuick 2.0

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Applications">
+        <file>Images/cover.png</file>
+        <file>Images/logo.png</file>
+        <file>Images/profile.png</file>
+    </qresource>
+</RCC>

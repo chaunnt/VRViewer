@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QML/ScreenChangePassword.qml</file>
+        <file>QML/ScreenForgotPassword.qml</file>
+        <file>QML/ScreenLogin.qml</file>
+    </qresource>
+</RCC>

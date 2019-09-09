@@ -1,0 +1,4 @@
+module Authentication
+plugin Authentication
+classname AuthenticationPlugins
+typeinfo plugins.qmltypes
