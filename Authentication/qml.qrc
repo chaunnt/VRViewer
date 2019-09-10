@@ -3,5 +3,6 @@
         <file>QML/ScreenChangePassword.qml</file>
         <file>QML/ScreenForgotPassword.qml</file>
         <file>QML/ScreenLogin.qml</file>
+        <file>QML/ScreenRegister.qml</file>
     </qresource>
 </RCC>

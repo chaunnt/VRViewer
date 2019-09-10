@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     // The binary in the desktop build is a level below the root of the project
     // This allows us to find all the plugins, without doing an install.
     engine.addImportPath("..");
-
+    engine.addImportPath("qrc:/Applications/");
     QScreen *screen = app.screens()[0];
     double dpi = screen->physicalDotsPerInch();
     dpi-= dpi * 10/100;

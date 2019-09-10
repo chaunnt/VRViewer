@@ -3,3 +3,5 @@ plugin VRViewerPlugins
 classname VRViewerPlugins
 typeinfo plugins.qmltypes
 depends QtQuick 2.0
+depends QtQuick.Controls 2.0
+BaseApp 1.0 BaseApp.qml

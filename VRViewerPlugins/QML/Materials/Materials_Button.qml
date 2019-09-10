@@ -17,6 +17,7 @@ Rectangle {
     property color buttonColor: baseColor
     property string buttonText: ""
     property color textColor: baseTextColor
+
     Text {
         id:txtButtonText
         text: buttonText

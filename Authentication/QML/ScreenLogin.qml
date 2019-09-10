@@ -80,6 +80,7 @@ Rectangle {
                 baseColor: Theme.general.baseColor
                 baseSelectingColor: Theme.general.baseSelectingColor
                 baseTextColor: Theme.general.baseTextColor
+                dpi
                 onClicked: {
                     forceActiveFocus()
                     if(txtUserName.text.trim() === ""){

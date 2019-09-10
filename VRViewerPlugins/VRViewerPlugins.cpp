@@ -15,10 +15,10 @@ void VRViewerPlugins::registerTypes(const char* uri)
 {
     // @uri SampleModules
     qmlRegisterType(QUrl("qrc:///Applications/QML/BaseApp.qml"), uri, 1, 0, "BaseApp");
-    qmlRegisterType(QUrl("qrc:///Custom/QML/Button/BaseButton.qml"), uri, 1, 0, "BaseButton");
+    qmlRegisterType(QUrl("qrc:///Controls/QML/Button/BaseButton.qml"), uri, 1, 0, "BaseButton");
     qmlRegisterType(QUrl("qrc:///Controls/QML/Materials/Materials_Button.qml"), uri, 1, 0, "Materials_Button");
     qmlRegisterType(QUrl("qrc:///Controls/QML/Materials/Materials_TextBox.qml"), uri, 1, 0, "Materials_TextBox");
-    qmlRegisterType(QUrl("qrc:///Custom/QML/Layout/BaseLayout.qml"), uri, 1, 0, "BaseLayout");
+    qmlRegisterType(QUrl("qrc:///Controls/QML/Layout/BaseLayout.qml"), uri, 1, 0, "BaseLayout");
     qmlRegisterSingletonType(QUrl("qrc:///Controls/QML/Theme/Theme.qml"), uri, 1, 0, "Theme");
     qmlRegisterSingletonType(QUrl("qrc:///Applications/QML/BaseQMLSettings.qml"), uri, 1, 0, "BaseQMLSettings");
 

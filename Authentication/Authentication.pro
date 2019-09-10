@@ -38,3 +38,5 @@ unix {
 RESOURCES += \
     qml.qrc \
     images.qrc
+
+QML_IMPORT_PATH += ../VRViewerPlugins

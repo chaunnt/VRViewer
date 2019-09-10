@@ -1,7 +1,6 @@
 pragma Singleton
 
 import QtQuick 2.0
-import QtQuick.Controls 1.4
 
 QtObject {
 
@@ -24,9 +23,5 @@ QtObject {
         The screen width when designed for scaled sizes
      */
     readonly property real designWidth: 1280
-
-    function sampleFunction(){
-
-    }
 
 }

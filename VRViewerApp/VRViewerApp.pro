@@ -30,7 +30,9 @@ RESOURCES += qml.qrc
 RESOURCES += resource/images.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
+QML_IMPORT_PATH += ../ProductManagement
+QML_IMPORT_PATH += ../ImageFilterPlugins
+QML_IMPORT_PATH += ../VRViewerPlugins
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
@@ -98,7 +100,3 @@ LIBS += -L../ImageFilterPlugins/ -lImageFilterPlugins
 
 TARGET = $$qtLibraryTarget($$TARGET)
 INSTALLS += $$TARGET_INSTALL_PATH
-
-QML_IMPORT_PATH += $$PWD/ProductManagement
-QML_IMPORT_PATH += $$PWD/ImageFilterPlugins
-QML_IMPORT_PATH += ../
