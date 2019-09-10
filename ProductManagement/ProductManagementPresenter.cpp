@@ -9,8 +9,6 @@ ProductManagementPresenter::ProductManagementPresenter(QObject * parent)
         ProductItem* newItem = new ProductItem("Product " + QString::number(i), "http://lamappdidong.com/dataresources/SampleObject.png");
         m_ProductList.append(newItem);
     }
-
-
 }
 
 ProductManagementPresenter::~ProductManagementPresenter()

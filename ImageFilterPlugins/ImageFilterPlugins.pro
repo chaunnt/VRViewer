@@ -34,7 +34,17 @@ unix {
     target.path = $$installPath
     INSTALLS += target qmldir
 }
-
+# - setup the correct location to install to and load from
+android {
+    # android platform
+    # From: http://community.kde.org/Necessitas/Assets
+    SAMPLES_INSTALL_PATH=/assets/ImageFilterPlugins
+    # - setup the 'make install' step
+    samples.path = $$SAMPLES_INSTALL_PATH
+    samples.files += $$SAMPLE_FILES
+    samples.depends += FORCE
+    INSTALLS += samples
+}
 RESOURCES += \
     qml.qrc \
     images.qrc

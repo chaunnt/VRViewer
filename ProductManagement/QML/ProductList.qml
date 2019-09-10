@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import VRViewerPlugins 1.0
-import ImageFilterPlugins 1.0
 
 Item {
     id:productListView
@@ -8,10 +7,10 @@ Item {
 
     ListView {
         width: parent.width
-        height: parent.height
+        height: parent.height - recProductListTitle.height - 10 * dpiToPixelValue
         model:productListPresenter.productList
-        spacing: 10
-        y: 10
+        spacing: 10 * dpiToPixelValue
+        y: 10 * dpiToPixelValue + recProductListTitle.height
 
         delegate: Rectangle {
             width: productListView.width - 20
@@ -58,6 +57,19 @@ Item {
                     Action.dispatch("ProductSelected", {activeProductName: modelData.productSource})
                 }
             }
+        }
+    }
+    Rectangle {
+        id:recProductListTitle
+        width: parent.width
+        height: txtProductListTitle.height
+        color: "white"
+        Text {
+            id: txtProductListTitle
+            text: qsTr("Chọn sản phẩm mà bạn muốn xem thử")
+            x: parent.width / 2 - width / 2
+            y: 5 * dpiToPixelValue
+            font.pixelSize: 18 * dpiToPixelValue
         }
     }
 }

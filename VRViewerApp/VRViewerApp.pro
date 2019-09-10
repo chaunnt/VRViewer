@@ -30,9 +30,9 @@ RESOURCES += qml.qrc
 RESOURCES += resource/images.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH += ../ProductManagement
-QML_IMPORT_PATH += ../ImageFilterPlugins
-QML_IMPORT_PATH += ../VRViewerPlugins
+#QML_IMPORT_PATH += ../ProductManagement
+#QML_IMPORT_PATH += ../ImageFilterPlugins
+#QML_IMPORT_PATH += ../VRViewerPlugins
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
@@ -81,9 +81,9 @@ android: {
     ANDROID_EXTRA_LIBS += $$OUT_PWD/../VRViewerPlugins/libVRViewerPlugins.so
     ANDROID_EXTRA_LIBS += $$OUT_PWD/../ProductManagement/libProductManagement.so
     ANDROID_EXTRA_LIBS += $$OUT_PWD/../ImageFilterPlugins/libImageFilterPlugins.so
-    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/VRViewerPlugins
-    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/ProductManagement
-    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/ImageFilterPlugins
+    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/../VRViewerPlugins
+    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/../ProductManagement
+    ANDROID_EXTRA_PLUGINS += $$OUT_PWD/../ImageFilterPlugins
 }
 
 QMAKE_LFLAGS *= -L../VRViewerPlugins

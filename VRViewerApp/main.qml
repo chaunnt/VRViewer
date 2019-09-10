@@ -31,8 +31,18 @@ ApplicationWindow {
             loaderMainWindow.setSource("qrc:/QML/ProductList.qml", {productListPresenter: appPresenter})
         }
     }
+    ActionListener {
+        actions: [ "DisplayLoginScreen" ]
+        onTriggered: {
+            loaderMainWindow.setSource("qrc:/QML/ScreenLogin.qml")
+        }
+    }
+    Loader{
+        id:loaderSplash
+        anchors.fill: parent
+    }
 
     Component.onCompleted: {
-        loaderMainWindow.setSource("qrc:/QML/ScreenLogin.qml")
+        loaderMainWindow.setSource("qrc:/SplashScreen.qml")
     }
 }

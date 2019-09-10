@@ -24,16 +24,11 @@ Rectangle {
             spacing: 20 * dpiToPixelValue * dpiToPixelValue
             x: 10 * dpiToPixelValue
             y: 10 * dpiToPixelValue
-            Rectangle{
-                width: parent.width
-                height: baseButtonHeight * 2
-                color: "transparent"
-                Image {
-                    source: logoImage
-                    height: baseButtonHeight * 2
-                    fillMode: Image.PreserveAspectFit
-                    anchors.centerIn: parent
-                }
+            Image {
+                source: logoImage
+                height:parent.width / 4
+                fillMode: Image.PreserveAspectFit
+                x: parent.width / 2 - width / 2
             }
 
             Materials_TextBox{
@@ -44,7 +39,7 @@ Rectangle {
                 baseColor: Theme.general.baseColor
                 baseSelectingColor: Theme.general.baseSelectingColor
                 baseTextColor: Theme.general.baseTextColor
-//                text:"chauinput"
+                //                text:"chauinput"
                 onTextChanged:{
                     if(txtUserName.text.trim() === "" || txtPassword.text.trim() === ""){
                         btnSignIn.enabled = false
@@ -69,7 +64,7 @@ Rectangle {
                         btnSignIn.enabled = true
                     }
                 }
-//                text:"chauinput"
+                //                text:"chauinput"
             }
             Materials_Button{
                 id:btnSignIn
@@ -80,25 +75,51 @@ Rectangle {
                 baseColor: Theme.general.baseColor
                 baseSelectingColor: Theme.general.baseSelectingColor
                 baseTextColor: Theme.general.baseTextColor
-                dpi
                 onClicked: {
-                    forceActiveFocus()
-                    if(txtUserName.text.trim() === ""){
-                        messageDialog.show("Please input Phone Number")
-                    }else if(txtPassword.text.trim() === ""){
-                        messageDialog.show("Please input password")
-                    }else{
-//                        waitingDialog.show("Please wait")
-//                        if(appManager.loginUser(txtUserName.text, txtPassword.text) === true){
-//                            if(appManager.startupApplication() === true){
-//                                mainStackView.push("qrc:/ScreenHome.qml")
-//                                isLoggedIn = true
-//                            }
-//                        }
-//                        waitingDialog.close()
-                        enabled = true
-                        Action.dispatch("DisplayListProduct")
-                    }
+                    //                    forceActiveFocus()
+                    //                    if(txtUserName.text.trim() === ""){
+                    //                        messageDialog.show("Please input Phone Number")
+                    //                    }else if(txtPassword.text.trim() === ""){
+                    //                        messageDialog.show("Please input password")
+                    //                    }else{
+                    //                        waitingDialog.show("Please wait")
+                    //                        if(appManager.loginUser(txtUserName.text, txtPassword.text) === true){
+                    //                            if(appManager.startupApplication() === true){
+                    //                                mainStackView.push("qrc:/ScreenHome.qml")
+                    //                                isLoggedIn = true
+                    //                            }
+                    //                        }
+                    //                        waitingDialog.close()
+                    //                        enabled = true
+                    Action.dispatch("DisplayListProduct")
+                }
+            }
+            Materials_Button{
+                id:btnRegister
+                buttonText: qsTr("Đăng ký")
+                buttonColor: enabled ? baseColor : "gray"
+                enabled: true
+                width: parent.width
+                baseColor: Theme.general.baseColor
+                baseSelectingColor: Theme.general.baseSelectingColor
+                baseTextColor: Theme.general.baseTextColor
+                onClicked: {
+                    //                    forceActiveFocus()
+                    //                    if(txtUserName.text.trim() === ""){
+                    //                        messageDialog.show("Please input Phone Number")
+                    //                    }else if(txtPassword.text.trim() === ""){
+                    //                        messageDialog.show("Please input password")
+                    //                    }else{
+                    //                        waitingDialog.show("Please wait")
+                    //                        if(appManager.loginUser(txtUserName.text, txtPassword.text) === true){
+                    //                            if(appManager.startupApplication() === true){
+                    //                                mainStackView.push("qrc:/ScreenHome.qml")
+                    //                                isLoggedIn = true
+                    //                            }
+                    //                        }
+                    //                        waitingDialog.close()
+                    //                        enabled = true
+                    Action.dispatch("DisplayListProduct")
                 }
             }
         }

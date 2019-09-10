@@ -3,7 +3,7 @@
 #Library -> Qt Quick 2 Extension Plugin
 TEMPLATE = lib
 TARGET = Authentication
-QT += qml quick
+QT += qml quick multimedia
 CONFIG += plugin c++11
 CONFIG -= android_install
 TARGET = $$qtLibraryTarget($$TARGET)

@@ -30,12 +30,12 @@ DISTFILES =
 }
 
 qmldir.files = qmldir
-#unix {
+unix {
     installPath = $$[QT_INSTALL_QML]/$$replace(uri, \., /)
     qmldir.path = $$installPath
     target.path = $$installPath
     INSTALLS += target qmldir
-#}
+}
 # - setup the correct location to install to and load from
 android {
     # android platform
