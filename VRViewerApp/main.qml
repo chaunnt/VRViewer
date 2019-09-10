@@ -1,6 +1,7 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
+import QtMultimedia 5.12
 import VRViewerPlugins 1.0
 import ProductManagement 1.0
 import Authentication 1.0

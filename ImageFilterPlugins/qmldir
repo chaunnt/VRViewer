@@ -2,5 +2,5 @@ module ImageFilterPlugins
 plugin ImageFilterPlugins
 classname ImageFilterPlugins
 typeinfo plugins.qmltypes
-depends QtMultimedia 5.13
+depends QtMultimedia 5.12
 depends QtQuick 2.0
