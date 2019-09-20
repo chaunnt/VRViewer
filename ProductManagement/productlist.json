@@ -1,12 +1,12 @@
 {        
   "productList": [
     {
-      "productName": "Túi vải đen",
+      "productName": "Túi vải trắng",
       "productImage": "qrc:/Images/Bag/Bag1.png",
       "productStore":"Túi vải Giovatory"
     },
     {
-      "productName": "Túi vải trắng",
+      "productName": "Túi vải đen",
       "productImage": "qrc:/Images/Bag/Bag2.png",
       "productStore":"Túi vải Giovatory"
     },

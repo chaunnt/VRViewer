@@ -5,6 +5,7 @@ import QtMultimedia 5.12
 import VRViewerPlugins 1.0
 import ProductManagement 1.0
 import Authentication 1.0
+import ImageFilterPlugins 1.0
 
 
 ApplicationWindow {
@@ -22,7 +23,7 @@ ApplicationWindow {
         actions: [ "ProductSelected" ]
         onTriggered: {
             console.log(data.activeProductName)
-            loaderMainWindow.setSource("qrc:/QML/CameraView.qml", {productSource: data.activeProductName})
+            loaderMainWindow.setSource("qrc:/ImageFilterPlugins/QML/CameraView.qml", {productSource: data.activeProductName})
         }
     }
 

@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/ImageFilterPlugins">
         <file>QML/CameraView.qml</file>
     </qresource>
 </RCC>
