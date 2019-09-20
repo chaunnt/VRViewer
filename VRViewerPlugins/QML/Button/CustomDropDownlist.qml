@@ -1,6 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
-import BasePlugins 1.0
+import VRViewerPlugins 1.0
 
 Rectangle{
     id: cbbMain

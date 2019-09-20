@@ -7,15 +7,15 @@ Item {
 
     ListView {
         id: lvProductList
-        width: parent.width - 10 * dpiToPixelValue
+        width: parent.width
         height: parent.height - recProductListTitle.height - 10 * dpiToPixelValue
         model: productListPresenter.productList
         spacing: 10 * dpiToPixelValue
         y: 10 * dpiToPixelValue + recProductListTitle.height
 
         delegate: Rectangle {
-            width: productListView.width - 20
-            height: productListView.height- 40
+            width: lvProductList.width - 20
+            height: lvProductList.height - 20
             color: "transparent"
             border.width: 1
             border.color: "lightgray"
@@ -41,7 +41,7 @@ Item {
             Text {
                 id: txtProductName
                 text: modelData.productName
-                font.pixelSize: 36
+                font.pixelSize: 24
                 font.bold: true
                 anchors.bottom: parent.bottom
                 verticalAlignment: Text.AlignVCenter
