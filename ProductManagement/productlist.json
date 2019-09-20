@@ -1,0 +1,104 @@
+{        
+  "productList": [
+    {
+      "productName": "Túi vải đen",
+      "productImage": "qrc:/Images/Bag/Bag1.png",
+      "productStore":"Túi vải Giovatory"
+    },
+    {
+      "productName": "Túi vải trắng",
+      "productImage": "qrc:/Images/Bag/Bag2.png",
+      "productStore":"Túi vải Giovatory"
+    },
+    {
+      "productName": "Khuyên tai 1",
+      "productImage": "qrc:/Images/Earing/Earing1.png",
+      "productStore":"Trang sức bông tai"
+    },
+    {
+      "productName": "Khuyên tai 2",
+      "productImage": "qrc:/Images/Earing/Earing2.png",
+      "productStore":"Trang sức bông tai"
+    },
+    {
+      "productName": "Khuyên tai 3",
+      "productImage": "qrc:/Images/Earing/Earing3.png",
+      "productStore":"Trang sức bông tai"
+    },
+    {
+      "productName": "Vòng cổ  1",
+      "productImage": "qrc:/Images/Necklace/Necklace1.png",
+      "productStore":"Trang sức vòng cổ"
+    },
+    {
+      "productName": "Vòng cổ  2",
+      "productImage": "qrc:/Images/Necklace/Necklace2.png",
+      "productStore":"Trang sức vòng cổ"
+    },
+    {
+      "productName": "Câyy Bạch mã hoàng tử",
+      "productImage": "qrc:/Images/Tree/bach-ma-hoang-tu.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Bạch quả",
+      "productImage": "qrc:/Images/Tree/bach-qua.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Bàng Singapore 60cm",
+      "productImage": "qrc:/Images/Tree/bang-singapore-60cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Bàng Singapore 100cm",
+      "productImage": "qrc:/Images/Tree/cay-bang-singapore-100cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Bàng Singapore",
+      "productImage": "qrc:/Images/Tree/cay-bang-singapore.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây chuối 120cm",
+      "productImage": "qrc:/Images/Tree/cay-chuoi-120cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây chuối 80cm",
+      "productImage": "qrc:/Images/Tree/cay-chuoi-80cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Monstera 120cm",
+      "productImage": "qrc:/Images/Tree/monstera-120cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây Monstera thanh xuân",
+      "productImage": "qrc:/Images/Tree/monstera-thanh-xuan.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây olive 120cm",
+      "productImage": "qrc:/Images/Tree/olive-120cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây olive 150cm",
+      "productImage": "qrc:/Images/Tree/olive-150cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây phát tài",
+      "productImage": "qrc:/Images/Tree/phat-tai-nui.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    },
+    {
+      "productName": "Cây xương rồng 100cm",
+      "productImage": "qrc:/Images/Tree/xuong-rong-100cm.png",
+      "productStore":"Cây cảnh giả JassiDecor"
+    }
+  ]
+}

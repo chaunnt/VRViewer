@@ -11,6 +11,7 @@
         <file>QML/Theme/Theme.qml</file>
         <file>QML/Materials/Materials_Button.qml</file>
         <file>QML/Materials/Materials_TextBox.qml</file>
+        <file>QML/Button/CustomDropDownlist.qml</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

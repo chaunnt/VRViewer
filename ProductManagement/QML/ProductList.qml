@@ -6,9 +6,10 @@ Item {
     property QtObject productListPresenter
 
     ListView {
-        width: parent.width
+        id: lvProductList
+        width: parent.width - 10 * dpiToPixelValue
         height: parent.height - recProductListTitle.height - 10 * dpiToPixelValue
-        model:productListPresenter.productList
+        model: productListPresenter.productList
         spacing: 10 * dpiToPixelValue
         y: 10 * dpiToPixelValue + recProductListTitle.height
 
@@ -18,7 +19,7 @@ Item {
             color: "transparent"
             border.width: 1
             border.color: "lightgray"
-            radius: 20
+            radius: 5 * dpiToPixelValue
             clip: true
             x: 10
 
@@ -27,7 +28,7 @@ Item {
                 y: 5
                 source: modelData.productSource
                 fillMode: Image.PreserveAspectFit
-                width: parent.height / 10 * 9
+                width: parent.width / 3
                 anchors.centerIn: parent
             }
             Rectangle {
@@ -59,17 +60,40 @@ Item {
             }
         }
     }
+
+    ListModel {
+        id: lmShopList
+        ListElement {
+            shopName: "Túi vải Giovatory"
+        }
+        ListElement {
+            shopName: "Cây cảnh giả JassiDecor"
+        }
+        ListElement {
+            shopName: "Trang sức vòng cổ"
+        }
+        ListElement {
+            shopName: "Trang sức bông tai"
+        }
+    }
+
     Rectangle {
         id:recProductListTitle
         width: parent.width
-        height: txtProductListTitle.height
+        height: shopListDropdown.height
         color: "white"
-        Text {
-            id: txtProductListTitle
-            text: qsTr("Chọn sản phẩm mà bạn muốn xem thử")
+
+        CustomDropDownlist {
+            id: shopListDropdown
+            width: parent.width - 10 * dpiToPixelValue
+            height: 60 * dpiToPixelValue
+            currentTextValue: qsTr("Chọn sản phẩm mà bạn muốn xem thử")
+            model:lmShopList
             x: parent.width / 2 - width / 2
             y: 5 * dpiToPixelValue
-            font.pixelSize: 18 * dpiToPixelValue
+            onCurrentTextValueChanged: {
+                productListPresenter.updateProductListByStore(currentTextValue)
+            }
         }
     }
 }

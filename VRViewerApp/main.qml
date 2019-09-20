@@ -32,6 +32,7 @@ ApplicationWindow {
             loaderMainWindow.setSource("qrc:/QML/ProductList.qml", {productListPresenter: appPresenter})
         }
     }
+
     ActionListener {
         actions: [ "DisplayLoginScreen" ]
         onTriggered: {

@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Images/SampleObject.png</file>
         <file>Images/resize_icon.png</file>
         <file>Images/LeftArrow_White.png</file>
     </qresource>

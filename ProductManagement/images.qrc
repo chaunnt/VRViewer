@@ -1,5 +1,24 @@
 <RCC>
     <qresource prefix="/">
-        <file>Images/SampleObject.png</file>
+        <file>Images/Bag/Bag1.png</file>
+        <file>Images/Bag/Bag2.png</file>
+        <file>Images/Earing/Earing1.png</file>
+        <file>Images/Earing/Earing2.png</file>
+        <file>Images/Earing/Earing3.png</file>
+        <file>Images/Necklace/Necklace1.png</file>
+        <file>Images/Necklace/Necklace2.png</file>
+        <file>Images/Tree/bach-ma-hoang-tu.png</file>
+        <file>Images/Tree/bach-qua.png</file>
+        <file>Images/Tree/bang-singapore-60cm.png</file>
+        <file>Images/Tree/cay-bang-singapore-100cm.png</file>
+        <file>Images/Tree/cay-bang-singapore.png</file>
+        <file>Images/Tree/cay-chuoi-120cm.png</file>
+        <file>Images/Tree/cay-chuoi-80cm.png</file>
+        <file>Images/Tree/monstera-120cm.png</file>
+        <file>Images/Tree/monstera-thanh-xuan.png</file>
+        <file>Images/Tree/olive-120cm.png</file>
+        <file>Images/Tree/olive-150cm.png</file>
+        <file>Images/Tree/phat-tai-nui.png</file>
+        <file>Images/Tree/xuong-rong-100cm.png</file>
     </qresource>
 </RCC>

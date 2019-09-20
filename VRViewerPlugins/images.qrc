@@ -3,5 +3,6 @@
         <file>Images/cover.png</file>
         <file>Images/logo.png</file>
         <file>Images/profile.png</file>
+        <file>Images/SortDownIcon_Unselected.png</file>
     </qresource>
 </RCC>

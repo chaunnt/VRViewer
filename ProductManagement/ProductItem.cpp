@@ -33,3 +33,14 @@ void ProductItem::setProductSource(QString newValue)
     m_ProductSource = newValue;
     Q_EMIT productSourceChanged();
 }
+
+QString ProductItem::getProductStore()
+{
+    return m_ProductStore;
+}
+
+void ProductItem::setProductStore(QString newValue)
+{
+    m_ProductStore = newValue;
+    Q_EMIT productStoreChanged();
+}

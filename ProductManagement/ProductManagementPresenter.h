@@ -11,8 +11,11 @@ public:
     virtual ~ProductManagementPresenter();
 
     QVariant getProductList();
+    Q_INVOKABLE void updateProductListByStore(QString storeName);
     Q_SIGNAL void productListChanged();
 
 private:
     QList<QObject*> m_ProductList;
+
+    void _loadProductList(QString storeName = "");
 };
